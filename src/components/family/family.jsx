@@ -1,7 +1,20 @@
 import React from 'react';
 import './family.css';
 
-const Family = () => {
+import FamilyItem from './family-item';
+
+const Family = ({family}) => {
+    
+    const elements = family.map(item => {
+        const {id, ...properties} = item;
+
+        return(
+            <React.Fragment key={id}>
+                 <FamilyItem {...properties}/>
+            </React.Fragment>
+        );
+    })
+
     return(
         <section className="family">
             <div className="container">
@@ -11,7 +24,7 @@ const Family = () => {
 
                 <div className="family__content">
                     <ul className="family__list">
-                        <li className="wow jackInTheBox">
+                        {/* <li className="wow jackInTheBox">
                             Не имеет ограничений по возрасту
                         </li>
                         <li className="wow jackInTheBox">
@@ -38,6 +51,11 @@ const Family = () => {
                         <li className="wow jackInTheBox">
                             Не имеет ограничений по возрасту
                         </li>
+                        <li>
+                            <FamilyItem/>
+                        </li> */}
+
+                        {elements}
                     </ul>
                 </div>
 
