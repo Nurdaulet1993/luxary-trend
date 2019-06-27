@@ -37,7 +37,7 @@ export default class Header extends Component {
                                 {elements}
                                 <li className="nav__item">
                                     <div className="social-group">
-                                        <div className="social social-facebook">
+                                        <div className="social social-facebook" >
                                             <i className="fab fa-facebook-f"></i>
                                         </div>
                                         <div className="social social-insta">
