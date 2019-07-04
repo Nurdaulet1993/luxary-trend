@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import './main-page.css';
 
+import Service from '../../service';
+
 import Header from '../header';
 import Footer from '../footer';
 import Hero from '../hero';
@@ -106,6 +108,10 @@ export default class MainPage extends Component {
               при истощении, слабости, после перенесенных заболеваний.`
       },
     ]
+  }
+
+  componentDidMount() {
+
   }
   
   deleteGoods = (id) => {
