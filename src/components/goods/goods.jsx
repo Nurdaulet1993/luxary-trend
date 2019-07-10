@@ -4,6 +4,7 @@ import './goods.css';
 import GoodsItem from './goods-item';
 
 const Goods = ({goods, deleteGoods}) => {
+    
     const elements = goods.map((item, i) => {
         
         const side = (i % 2) ? 'left' : 'right';

@@ -9,4 +9,6 @@ serviceWorker.unregister();
 
 const service = new Service();
 
-service.getData('/src/db.json').then((body) => {console.log(body)});
+service.getData('db.json').then((body) => {console.log(body.testimonials)});
+
+console.log("hello");

@@ -7,23 +7,24 @@ export default class Header extends Component {
     render () {
 
         const {navLinks} = this.props;
+        console.log(navLinks);
 
-        const elements = navLinks.map(item => {
-            const {id, ...properties} = item;
+        // const elements = navLinks.map(item => {
+        //     const {id, ...properties} = item;
 
-            return(
-                <React.Fragment key={id}>
-                    <NavLink {...properties}/>
-                </React.Fragment>
+        //     return(
+        //         <React.Fragment key={id}>
+        //             <NavLink {...properties}/>
+        //         </React.Fragment>
                 
-            );
-        })
+        //     );
+        // })
     
         return(
             <header className="header ">
                 <div className="container">
                     <div className="header__navbar">
-                        <a href="javascript:void(0)" className="logo header__logo">
+                        <a href="#" className="logo header__logo">
                             <img src="./assets/img/logo-origin.svg" alt="logotype" width="200"/>
                         </a>
             
@@ -34,7 +35,7 @@ export default class Header extends Component {
                                 <li className="nav__item"><a href="#profit" className="nav__link">Польза</a></li>
                                 <li className="nav__item"><a href="#testimonial" className="nav__link">Отзывы</a></li>
                                 <li className="nav__item"><a href="javascript:void(0)" className="nav__link">Контакты</a></li> */}
-                                {elements}
+                                {/* {elements} */}
                                 <li className="nav__item">
                                     <div className="social-group">
                                         <div className="social social-facebook" >
